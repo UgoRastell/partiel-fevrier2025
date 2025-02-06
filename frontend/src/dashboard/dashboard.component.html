@@ -1,0 +1,26 @@
+<div class="dashboard">
+    <h2>Tableau de Bord</h2>
+
+    <div class="stat">
+        <h3>Total des Commandes</h3>
+        <p>{{ totalOrders }}</p>
+    </div>
+
+    <div class="stat">
+        <h3>Produits les plus vendus</h3>
+        <ul>
+            <li *ngFor="let product of topSellingProducts">
+                {{ product.name }} - {{ product.sold }} vendus
+            </li>
+        </ul>
+    </div>
+
+    <div class="stat">
+        <h3>Niveau de Stock</h3>
+        <ul>
+            <li *ngFor="let product of stockLevels">
+                {{ product.name }} - {{ product.stock }} en stock
+            </li>
+        </ul>
+    </div>
+</div>

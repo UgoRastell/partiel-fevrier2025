@@ -1,0 +1,10 @@
+.dashboard {
+    padding: 20px;
+}
+
+.stat {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
