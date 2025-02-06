@@ -24,7 +24,6 @@ Ce projet est une application de gestion d’inventaire et de commandes construi
 
 ```
 git clone https://github.com/UgoRastell/partiel-fevrier2025.git
-cd ton-projet
 ```
 
 ### 2️⃣ Lancer l’application avec Docker
