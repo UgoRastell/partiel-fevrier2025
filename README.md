@@ -23,7 +23,7 @@ Ce projet est une application de gestion d’inventaire et de commandes construi
 ### **1️⃣ Cloner le projet**
 
 ```
-git clone <https://github.com/ton-repo.git>
+git clone https://github.com/UgoRastell/partiel-fevrier2025.git
 cd ton-projet
 ```
 
