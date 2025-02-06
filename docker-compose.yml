@@ -31,13 +31,18 @@ services:
       - "3000:3000"
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
     container_name: angular_app
     restart: always
     depends_on:
       - backend
     ports:
       - "4200:80"
+    volumes:
+      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf
+
+
 
 volumes:
   pgdata:

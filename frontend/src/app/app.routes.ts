@@ -1,7 +1,15 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from '../dashboard/dashboard.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { UsersComponent } from './pages/users/users.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
 
 export const routes: Routes = [
-    { path: 'dashboard', component: DashboardComponent },
-    { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, // Redirection vers le dashboard par défaut
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
+    { path: 'products', component: ProductsComponent },
+    { path: 'orders', component: OrdersComponent },
+    { path: 'users', component: UsersComponent },
+    { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];

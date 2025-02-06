@@ -1,0 +1,6 @@
+<h2>Liste des Commandes</h2>
+<ul>
+    <li *ngFor="let order of orders">
+        Commande #{{ order.id }} - Statut: {{ order.status }}
+    </li>
+</ul>
